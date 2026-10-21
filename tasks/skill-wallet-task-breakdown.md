@@ -4,8 +4,8 @@ Mark a task complete only after implementation and evidence are available.
 
 ## Epic 1 — Requirements Specification and Environment Setup
 ### Activity 1.1: Create requirements.txt
-- [ ] 1.1.1 List FastAPI, Uvicorn, python-multipart, OpenCV, NumPy and Pydantic.
-- [ ] 1.1.2 Document setup steps in README.
+- [x] 1.1.1 List FastAPI, Uvicorn, python-multipart, OpenCV, NumPy and Pydantic.
+- [x] 1.1.2 Document setup steps in README.
 - [ ] 1.1.3 Verify installation in a clean virtual environment.
 - Evidence: requirements file and successful install screenshot.
 ### Activity 1.2: Install libraries and set up virtual environment
@@ -96,11 +96,3 @@ Mark a task complete only after implementation and evidence are available.
 - [ ] 6.3.5 Finalise README and demo script.
 - [ ] 6.3.6 Capture screenshots, commits and submission evidence.
 - Evidence: test report, build output, README and demo.
-
-## Suggested order
-1. Epic 1 setup.
-2. Epic 6.1 backend health.
-3. Epic 6.2 frontend connection.
-4. Epics 2 and 5 demo flows.
-5. Epics 3 and 4 prototypes and validated models if data/time allow.
-6. Epic 6.3 testing and evidence.
