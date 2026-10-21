@@ -12,8 +12,8 @@ A student-friendly full-stack prototype using React, FastAPI, Python, and OpenCV
 ## Run the backend
 ```bash
 python -m venv .venv
-# Windows PowerShell: .venv\\Scripts\\Activate.ps1
-# Windows CMD: .venv\\Scripts\\activate.bat
+# Windows PowerShell: .venv\Scripts\Activate.ps1
+# Windows CMD: .venv\Scripts\activate.bat
 python -m pip install --upgrade pip
 pip install -r requirements.txt
 uvicorn backend.main:app --reload
@@ -28,6 +28,9 @@ npm install
 npm run dev
 ```
 Open the local URL printed by Vite (usually http://127.0.0.1:5173).
+
+## Automated dependency verification
+GitHub Actions runs a clean Python 3.11 environment, installs `requirements.txt`, checks dependency consistency with `pip check`, and verifies that the required packages and backend module import. See the [Verify Python requirements workflow](.github/workflows/verify-requirements.yml). A green workflow run is evidence of CI verification; it does not prove installation on your personal computer.
 
 ## Project modules
 - Food recognition: image upload and OpenCV decoding; a trained classifier still needs to be connected.
